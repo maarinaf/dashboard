@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transações - Dashboard Financeiro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-chart-line"></i>
+                <h1>FinDash</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="mercado.html"><i class="fas fa-chart-bar"></i> Mercado</a></li>
+                    <li><a href="carteira.html"><i class="fas fa-wallet"></i> Carteira</a></li>
+                    <li><a href="transacoes.html" class="active"><i class="fas fa-exchange-alt"></i> Transações</a></li>
+                    <li><a href="configuracoes.html"><i class="fas fa-cog"></i> Configurações</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="content">
+            <header>
+                <div class="search">
+                    <input type="text" placeholder="Pesquisar transação...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="user">
+                    <i class="fas fa-bell"></i>
+                    <img src="./img/usuario_dashboard.png" alt="Usuário">
+                </div>
+            </header>
+
+            <div class="transactions-content">
+                <h2>Histórico de Transações</h2>
+                <div class="transactions-actions">
+                    <button class="btn-primary"><i class="fas fa-plus"></i> Nova Transação</button>
+                    <div class="transactions-filter">
+                        <select>
+                            <option value="all">Todas as Operações</option>
+                            <option value="buy">Compras</option>
+                            <option value="sell">Vendas</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="transactions-list">
+                    <div class="transaction-item buy">
+                        <div class="transaction-info">
+                            <span class="transaction-type">Compra</span>
+                            <span class="transaction-asset">PETR4</span>
+                        </div>
+                        <div class="transaction-details">
+                            <span class="transaction-amount">100 ações</span>
+                            <span class="transaction-price">R$ 28,50</span>
+                            <span class="transaction-total">R$ 2.850,00</span>
+                        </div>
+                        <div class="transaction-date">
+                            15/03/2024
+                        </div>
+                    </div>
+                    <div class="transaction-item sell">
+                        <div class="transaction-info">
+                            <span class="transaction-type">Venda</span>
+                            <span class="transaction-asset">VALE3</span>
+                        </div>
+                        <div class="transaction-details">
+                            <span class="transaction-amount">50 ações</span>
+                            <span class="transaction-price">R$ 68,30</span>
+                            <span class="transaction-total">R$ 3.415,00</span>
+                        </div>
+                        <div class="transaction-date">
+                            14/03/2024
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html> 

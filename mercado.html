@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado - Dashboard Financeiro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-chart-line"></i>
+                <h1>FinDash</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="mercado.html" class="active"><i class="fas fa-chart-bar"></i> Mercado</a></li>
+                    <li><a href="carteira.html"><i class="fas fa-wallet"></i> Carteira</a></li>
+                    <li><a href="transacoes.html"><i class="fas fa-exchange-alt"></i> Transações</a></li>
+                    <li><a href="configuracoes.html"><i class="fas fa-cog"></i> Configurações</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="content">
+            <header>
+                <div class="search">
+                    <input type="text" placeholder="Pesquisar ativo...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="user">
+                    <i class="fas fa-bell"></i>
+                    <img src="./img/usuario_dashboard.png" alt="Usuário">
+                </div>
+            </header>
+
+            <div class="market-content">
+                <h2>Visão Geral do Mercado</h2>
+                <div class="market-grid">
+                    <div class="market-card">
+                        <h3>Ações em Alta</h3>
+                        <div class="stock-list">
+                            <div class="stock-item">
+                                <span>MGLU3</span>
+                                <span class="positive">+4.2%</span>
+                            </div>
+                            <div class="stock-item">
+                                <span>WEGE3</span>
+                                <span class="positive">+3.8%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="market-card">
+                        <h3>Ações em Baixa</h3>
+                        <div class="stock-list">
+                            <div class="stock-item">
+                                <span>BBAS3</span>
+                                <span class="negative">-2.1%</span>
+                            </div>
+                            <div class="stock-item">
+                                <span>PETR4</span>
+                                <span class="negative">-1.5%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html> 
