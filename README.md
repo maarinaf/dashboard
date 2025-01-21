@@ -38,6 +38,7 @@ FinDash é um dashboard financeiro moderno e responsivo desenvolvido para acompa
 - Font Awesome para ícones
 
 ## Estrutura do Projeto 
+```
 findash/
 ├── index.html
 ├── mercado.html
@@ -50,12 +51,12 @@ findash/
 │ └── charts.js
 └── img/
 └── usuario_dashboard.png
-
+```
 ## Como Usar
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/findash.git
+git clone https://github.com/maarinaf/findash.git
 ```
 2. Abra o arquivo `index.html` em seu navegador ou utilize um servidor local.
 
